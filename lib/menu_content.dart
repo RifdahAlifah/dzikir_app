@@ -13,7 +13,33 @@ class ContentMenu extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 Text('Pilih Aktivitasmu',
-                  style: styleTitle, textAlign: TextAlign.left),
+                    style: styleTitle, textAlign: TextAlign.left),
+              ],
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.all(8.0),
+            height: 70.0,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: <Widget>[
+                Expanded(
+                  flex: 3,
+                  child: Card(
+                    elevation: 2,
+                    child: FlatButton(
+                      onPressed: (){
+                        Navigator.push(context, PageRouteBuilder(
+                          transitionDuration: Duration(seconds: 2),
+                          transitionsBuilder: (context, animation, animationTime, child){
+                            
+                          }
+                        ))
+                      },
+
+                    ),
+                  ),
+                )
               ],
             ),
           )
