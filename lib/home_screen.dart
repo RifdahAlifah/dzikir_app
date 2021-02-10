@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'header_content.dart';
+import 'menu_content.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -10,6 +11,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             HeaderContent(),
+            ContentMenu()
           ],
         ),
       ),
